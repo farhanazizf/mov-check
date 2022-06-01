@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,
+    shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>MOVINFO</title>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <span class="navbar-brand" to="/">MOVINFO</span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="top-page">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item pl-3">
+              <a class="nav-link" id="homeTab" href="#">Home</a>
+            </li>
+            <li class="nav-item pl-3">
+              <a class="nav-link" id="searchTitleTab" href="#">
+                Search Movies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <div id="main-body">
+      <!-- home page  -->
+      <div class="jumbotron jumbotron-fluid" id="container-page-home">
+        <h1 class="display-4 text-center">MOVINFO</h1>
+        <hr class="my-4" />
+        <p class="lead text-center">Pakresif UBP - Public API Movies</p>
+      </div>
+
+      <!-- search page -->
+      <div class="container d-none" id="container-page-search">
+        <div class="row mt-5 justify-content-center">
+          <div class="col-md-7">
+            <h2 class="text-center">Search Movies</h2>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Movie's Name"
+                id="input-search"
+                autocomplete="off"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="button" id="button-search">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card movies -->
+        <div class="justify-content-center row p-3" id="container-card-movies">
+          <!-- disini card movies based on search -->
+        </div>
+      </div>
+
+      <div class="container d-none" id="container-page-details">
+        <!-- detail page -->
+      </div>
+    </div>
+  </body>
+
+  <footer class="navbar py-5 bg-light mt-5">
+    <div class="container d-flex align-items-start">
+      <div class="col-md-4" style="min-height: 125px">
+        <h4>MOVINFO</h4>
+        <p class="text-secondary" id="foot">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          voluptatem numquam facilis harum est, eum nesciunt magnam neque culpa
+          quod! Totam perspiciatis iste laboriosam eveniet laudantium illo
+          fugiat autem odio!
+        </p>
+      </div>
+      <div class="col-md-2 ml-1 float-right" style="min-height: 125px">
+        <h4>USER</h4>
+        <p class="my-0">
+          <a href="#" role="button" class="text-secondary">Users</a>
+        </p>
+        <p class="my-0">
+          <a href="#" role="button" class="text-secondary">Register User</a>
+        </p>
+        <p class="my-0">
+          <a href="#" role="button" class="text-secondary my-0"
+            >Terms & Condition User</a
+          >
+        </p>
+        <p class="my-0">
+          <a href="#" role="button" class="text-secondary my-0">FAQ User</a>
+        </p>
+      </div>
+      <div class="col-md-5" style="min-height: 125px">
+        <h4>Follow us on</h4>
+        <div class="social mt-3">
+          <i id="facebook" class="fab fa-facebook-f mr-3"></i>
+          <i id="instagram" class="fab fa-instagram mr-3"></i>
+          <i id="google" class="fab fa-google-plus mr-3"></i>
+          <i id="youtube" class="fab fa-youtube mr-3"></i>
+          <i id="twitter" class="fab fa-twitter mr-3"></i>
+          <i id="linkedin" class="fab fa-linkedin mr-3"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>
