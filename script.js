@@ -27,7 +27,7 @@ $("#searchTitleTab").on("click", () => {
   $("#container-page-details").addClass("d-none");
 });
 
-$("#button-search").on("click", function () {
+function getMovies() {
   $.ajax({
     url: urlAPI,
     type: "get",
@@ -76,6 +76,16 @@ $("#button-search").on("click", function () {
       }
     },
   });
+}
+
+$("#input-search").on("keyup", function (e) {
+  if (e.key === "Enter") {
+    getMovies();
+  }
+});
+
+$("#button-search").on("click", function () {
+  getMovies();
 });
 
 $("#container-card-movies").on("click", ".btn-details", function () {
